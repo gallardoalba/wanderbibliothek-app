@@ -21,8 +21,8 @@ F-Droid construye desde un *commit* publicado, no desde un APK. El `versionCode`
 y el `versionName` del tag tienen que coincidir con el YAML:
 
 ```sh
-cd /home/nouser/Desktop/wanderbibliothek
-grep -n 'versionCode\|versionName' android/app/build.gradle.kts   # 8 / 0.1.5
+cd ~/Desktop/wanderbibliothek-app
+grep -n 'versionCode\|versionName' app/build.gradle.kts   # 8 / 0.1.5
 git tag -a v0.1.5 -m "Wanderbibliothek 0.1.5 para F-Droid"
 git push origin v0.1.5
 ```
@@ -55,7 +55,7 @@ que la portada nueva de la app.
 ## Paso 3 · Pedir la inclusión en F-Droid
 
 1. Bifurca <https://gitlab.com/fdroid/fdroiddata>.
-2. Copia `android/fdroid/org.wanderbibliothek.app.yml` a
+2. Copia `fdroid/org.wanderbibliothek.app.yml` a
    `metadata/org.wanderbibliothek.app.yml` y ajusta versión y commit.
 3. Abre una *merge request* con el título
    `New app: org.wanderbibliothek.app`.
@@ -118,7 +118,7 @@ Y una revisión de privacidad que F-Droid mira con lupa:
 
 1. Publicar en **IzzyOnDroid** ya (misma firma, misma app, sin esperar).
 2. Sacar las capturas de móvil y dejarlas en `fastlane/…/images/phoneScreenshots/`.
-3. Abrir la MR en `fdroiddata` con la receta de `android/fdroid/` (ya apunta a
+3. Abrir la MR en `fdroiddata` con la receta de `fdroid/` (ya apunta a
    `v0.1.5` y trae `UpdateCheckMode: Tags`, así que las versiones siguientes se
    abren solas al empujar la etiqueta).
 4. Avisar en la web de que F-Droid usa otra firma antes de que aparezca.

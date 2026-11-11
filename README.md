@@ -4,6 +4,12 @@ Cliente nativo de la plataforma, escrito en Kotlin y Jetpack Compose. Habla
 directamente con la API REST de Wanderbibliothek; no envuelve la web en un
 WebView.
 
+Este repositorio es solo la **app**. El servidor (Next.js + SQLite, la web y la
+documentación técnica) vive en
+[`gallardoalba/WB`](https://github.com/gallardoalba/WB). Los textos legales y
+las cifras del proyecto están en esa web; aquí están el cliente, sus pruebas y
+el canal de publicación.
+
 ## Qué incluye
 
 - **Descubrir**: catálogo público con búsqueda, filtros (categoría, orden,

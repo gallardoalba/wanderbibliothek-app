@@ -3,7 +3,7 @@
 #
 # Lo que hay que revisar en cada versión:
 #   · versionName / versionCode deben coincidir EXACTAMENTE con
-#     android/app/build.gradle.kts en el commit etiquetado.
+#     app/build.gradle.kts en el commit etiquetado.
 #   · commit: la etiqueta del repositorio (no el hash a mano).
 #   Con `UpdateCheckMode: Tags` y `AutoUpdateMode: Version` basta con empujar la
 #   etiqueta: F-Droid abre sola la MR de la versión siguiente.
@@ -61,5 +61,5 @@ Builds:
 #   · La app habla con https://wanderbibliothek.org por defecto, pero el
 #     servidor también es software libre (MIT) y la dirección se puede cambiar
 #     en Ajustes: no es una dependencia de un servicio no libre.
-#   · Metadatos de ficha en android/fastlane/metadata/android/{de-DE,es-ES,en-US};
+#   · Metadatos de ficha en fastlane/metadata/android/{de-DE,es-ES,en-US};
 #     faltan las capturas (images/phoneScreenshots), que se toman del teléfono.

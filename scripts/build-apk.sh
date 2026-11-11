@@ -56,7 +56,7 @@ done
 
 for tool in ./gradlew python3; do
   command -v "$tool" >/dev/null 2>&1 || {
-    echo "Falta $tool: ejecuta el script desde android/ con el SDK instalado." >&2
+    echo "Falta $tool: ejecuta el script desde la raíz del repositorio, con el SDK instalado." >&2
     exit 1
   }
 done
